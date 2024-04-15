@@ -20,12 +20,8 @@
 \usepackage{mathtools}
 
 % Fonteinstellungen
-\usepackage{fontspec}
-% Latin Modern Fonts werden automatisch geladen
-% Alternativ zum Beispiel:
-%\setromanfont{Libertinus Serif}
-%\setsansfont{Libertinus Sans}
-%\setmonofont{Libertinus Mono}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 % Wenn man andere Schriftarten gesetzt hat,
 % sollte man das Seiten-Layout neu berechnen lassen
@@ -34,28 +30,6 @@
 % deutsche Spracheinstellungen
 % change to \usepackage[english]{babel} if you are writing in English
 \usepackage[ngerman]{babel}
-
-
-\usepackage[
-  math-style=ISO,    % ┐
-  bold-style=ISO,    % │
-  sans-style=italic, % │ ISO-Standard folgen
-  nabla=upright,     % │
-  partial=upright,   % │
-  mathrm=sym,        % ┘
-  warnings-off={           % ┐
-    mathtools-colon,       % │ unnötige Warnungen ausschalten
-    mathtools-overbracket, % │
-  },                       % ┘
-]{unicode-math}
-
-% traditionelle Fonts für Mathematik
-\setmathfont{Latin Modern Math}
-% Alternativ zum Beispiel:
-%\setmathfont{Libertinus Math}
-
-\setmathfont{XITS Math}[range={scr, bfscr}]
-\setmathfont{XITS Math}[range={cal, bfcal}, StylisticSet=1]
 
 % Zahlen und Einheiten
 \usepackage[
