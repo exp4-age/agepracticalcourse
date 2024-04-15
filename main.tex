@@ -1,0 +1,36 @@
+\input{header.tex}
+% If you are writing in English, go to the header.tex file and change
+% to english in lines 36 and 122
+
+\author{%
+  AUTOR A\\%
+  \href{mailto:authorA@uni-kassel.de}{authorA@uni-kassel.de}%
+  \and%
+  AUTOR B\\%
+  \href{mailto:authorB@uni-kassel.de}{authorB@uni-kassel.de}%
+}
+\publishers{Universität Kassel – Institut für Physik und CINSaT}
+
+\subject{V\[1-6\]}
+\title{Title}
+\date{%
+  Durchführung: Datum
+  \hspace{3em}
+  Abgabe: Datum
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+
+\input{content/1_theory.tex}
+\input{content/2_experiment.tex}
+\input{content/3_evaluation.tex}
+\input{content/4_discussion.tex}
+
+\printbibliography{}
+
+\end{document}
