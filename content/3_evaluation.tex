@@ -6,9 +6,10 @@ Die Schwingungsdauern
 \end{equation}
 ergeben sich aus den Messgrößen $t_{i1}$ und $t_{i2}$ der beiden Einzelmessungen über alle Perioden, jeweils dividiert durch die Zahl der Schwingungen pro Messung mit der jeweiligen Unsicherheit
 \begin{equation}
-    \sigma_{T_i} = \sqrt{\frac{\sigma_{t_{i1}}^2}{4 n_{i1}^2} + \frac{\sigma_{t_{i2}}^2}{4 n_{i2}^2}} .
+    \sigma_{T_i} = \sqrt{\frac{\sigma_{t_{i1}}^2}{4 n_{i1}^2} + \frac{\sigma_{t_{i2}}^2}{4 n_{i2}^2}} ,
 \end{equation}
-Durch Einsetzen der gemessenen Werten aus Tabelle \ref{tab:messwerte} ergibt sich
+welche nach dem Gaußschen Fehlerfortpflanzungsgesetz bestimmt wird.
+Durch Einsetzen der gemessenen Werte aus Tabelle \ref{tab:messwerte} ergibt sich
 \begin{align*}
     T_0 &= \qty{29,06(3)}{\second} \\
     T_1 &= \qty{31,02(3)}{\second} \\
@@ -18,7 +19,7 @@ Die Federkonstante lässt sich nach Gleichung \eqref{eq:federkonstante} bestimme
 \begin{equation*}
     D = \qty{2,92(9)e-4}{\newton\meter}
 \end{equation*}
-mit der Unsicherheit
+mit der Unsicherheit\footnote{Dies ist erneut die Gaußsche Fehlerfortpflanzung. Diese muss nicht so ausführlich hingeschrieben werden wie hier.}
 \begin{equation*}
     \sigma_D = \sqrt{\left(\frac{\partial D}{\partial m}\cdot \sigma_{m}\right)^2+\left(\frac{\partial D}{\partial R_1}\cdot \sigma_{R_1}\right)^2+\left(\frac{\partial D}{\partial R_2}\cdot \sigma_{R_2}\right)^2+\left(\frac{\partial D}{\partial T_1}\cdot \sigma_{T_1}\right)^2+\left(\frac{\partial D}{\partial T_2}\cdot \sigma_{T_2}\right)^2}
 \end{equation*}
@@ -31,7 +32,7 @@ und den jeweiligen Ableitungen
     \frac{\partial D}{\partial T_1} &= -4\cdot \pi^2\cdot m\cdot \frac{R_2^2 - R_1^2}{(T_2^2-T_1^2)^2}\cdot (-2)\cdot T_1 \\
     \frac{\partial D}{\partial T_2} &= -4\cdot \pi^2\cdot m\cdot \frac{R_2^2 - R_1^2}{(T_2^2 - T_1^2)^2}\cdot 2\cdot T_2 .
 \end{align*}
-Damit ist es möglich, das Torsionsmodul des Stahldrahtes bzgl. die Verdrillung nach Gleichung \eqref{eq:torsionsmodul} zu ermitteln:
+Damit ist es möglich das Torsionsmodul des Stahldrahtes bzw. die Verdrillung nach Gleichung \eqref{eq:torsionsmodul} zu ermitteln:
 \begin{equation*}
     G = \qty{7.14(117)e10}{\newton\per\square\meter}
 \end{equation*}
@@ -40,7 +41,7 @@ Dabei wird die Unsicherheit mit
     \sigma_G = \frac{2}{\pi} \sqrt{\left(\frac{l}{r^4} \cdot \sigma_D\right)^2 + \left(\frac{D}{r^4} \cdot \sigma_l\right)^2 + \left(\frac{4 \cdot D \cdot l}{r^5} \cdot \sigma_r\right)^2}
 \end{equation*}
 fortgepflanzt.
-Mit der Messung ohne zusätzliche Massen $T_0$, der Gleichung \eqref{eq:schwingungsdauer} und der Fehlerfortpflanzung
+Mit der Messung ohne zusätzliche Massen $T_0$, der Gleichung \eqref{eq:schwingungsdauer} und der Gaußschen Fehlerfortpflanzung
 \begin{equation*}
     \sigma_J = \sqrt{\left(\frac{T_0^2}{4 \pi^2} \cdot \sigma_D\right)^2 + \left(\frac{2 \cdot T_0 \cdot D}{4 \pi^2} \cdot \sigma_{T_0}\right)^2}
 \end{equation*}
