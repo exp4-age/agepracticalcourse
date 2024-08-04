@@ -1,19 +1,19 @@
 \section{Messprotokoll}
 \textsl{In diesem Teil wird das Messprotokoll aus dem Original in ein ordentliches Format gebracht\footnote{Scan / Foto des Original Messprotokolls vom Versuchstag im Anhang}.}
 
+\subsection{Versuchsdurchführung}
+Zuerst wurden die Abmessungen des Pendels sowie die für die Auswertung erforderlichen anderen Größen bestimmt (siehe Abb. \ref{fig:skizze}).
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{plots/skizze.png}
-    \caption{Skizze des Torsionspendels. \textsl{Zeichnen Sie hier eine sinvolle Skizze des Versuchsaufbaus und beschriften Sie diese inklusive aller Messpositionen und Konstanten.}}
+    \caption{Skizze des Torsionspendels mit den Messgrößen: Länge des Drahtes $l$, Durchmesser des Drahtes $d = 2 \cdot r$, Masse der Gewichte $m$ und Position der Gewichte $R$. Die Rotationsachse verläuft durch den Draht mit der eingezeichneten Auslenkung $\varphi$.}
     \label{fig:skizze}
 \end{figure}
-
-\subsection{Versuchsdurchführung}
-Zuerst wurden die Abmessungen des Pendels sowie die für die Auswertung erforderlichen anderen Größen bestimmt (siehe Abb. \ref{fig:skizze}).
-Außerdem wurden die Fehler für die einzelnen Messungen abgeschätzt.
-Die Massen, die während der Versuchsdurchführung am Pendel angebracht wurden, wurden mit einer elektronischen Waage des Typs "`Kern CB12K1N"' gewogen.
-Die Zeitmessung erfolgte mit einer elektronischen Stoppuhr des Typs "`Triple Timer"'.
-Die Abmessungen des Pendels wurden mit einem Bandmaß bestimmt; für die Bestimmung des Durchmessers des Drahtes wurde eine Mikrometerschraube verwendet, deren Bezeichnung auf Grund von häufiger Benutzung nicht mehr erkennbar war. 
+Zu den gemessenen Werten (siehe Tab. \ref{tab:draht} und \ref{tab:messwerte}) wurde jeweils eine Messunsicherheit abgeschätzt:
+Die Massen $m$, die während der Versuchsdurchführung am Pendel angebracht wurde, wurden mit einer elektronischen Waage des Typs "`Kern CB12K1N"' gewogen, welche laut Hersteller eine Unsicherheit von $\qty{1}{\gram}$ hat.
+Die Unsicherheit der Zeitmessung mit einer Stoppuhr ist dominiert von der Fähigkeit des Experimentators und wurde nach mehreren kurzen Testmessungen mit $\qty{1}{\second}$ abgeschätzt.
+Die Abmessungen des Pendels wurden mit einem Bandmaß bestimmt, für welches eine Unsicherheit von $\qty{3}{\milli\meter}$ angenommen wird. 
+Für die Bestimmung des Durchmessers des Drahtes wurde eine Mikrometerschraube verwendet, deren Bezeichnung auf Grund von häufiger Benutzung nicht mehr erkennbar war, weshalb die Unsicherheit etwas größer als üblich mit $\qty{20}{\micro\meter}$ abgeschätzt wird.
 
 Bei der Durchführung wurde wie folgt vorgegangen: Zuerst wurde die Ruhelage des Pendels bestimmt. Von dort aus wurde dem Pendel eine Anfangsamplitude von einer Umdrehung gegeben.
 Bei Starten des Pendels aus dieser Postion erfuhr es leichte vertikale Schwingungen um die horizontale Achse, welche über die Dauern der einzelnen Messungen bestehen blieben.
@@ -27,7 +27,6 @@ Während jeder Messung der Schwingungsdauern war zu beobachten, dass die Amplitu
 Dies entspricht ca. 50\% der Startamplitude.
 
 \subsection{Messwerte}
-\textsl{Erstellen Sie hier eine Tabelle mit den Messwerten und den zugehörigen abgeschätzten Messfehlern.}
 
 \begin{table}[ht]
     \centering
@@ -38,8 +37,7 @@ Dies entspricht ca. 50\% der Startamplitude.
         Länge $l \;/\; \si{\meter}$ & Durchmesser $d \;/\; \si{\meter}$ \\
         \num{1,500(3)} & \num{5,0(2)e-4} \\
     \end{tblr}
-    \caption{Gemessene Eigenschaften des Drahtes.}
-    \label{tab:draht}
+    \caption{Gemessene Eigenschaften des Drahtes mit abgeschätzten Unsicherheiten.\label{tab:draht}}
 \end{table}
 \begin{table}[ht]
     \centering
@@ -52,14 +50,13 @@ Dies entspricht ca. 50\% der Startamplitude.
         cell{4}{3}={r=2}{c},
         cell{6}{3}={r=2}{c},
         }
-        Messung & Masse $m \;/\; \si{\kilogram}$ & Position $R\;/\;\si{\meter}$ & $t \;/\; \si{\second}$ & \#Perioden n \\
-        $t_{01}$ & -              &   -            & \num{755,53(100)} & 26 \\
-        $t_{02}$ &                &                & \num{726,29(100)} & 25 \\
-        $t_{11}$ & \num{0,393(1)} & \num{0,045(3)} & \num{806,59(100)} & 26 \\
-        $t_{12}$ &                &                & \num{775,66(100)} & 25 \\
-        $t_{21}$ &                & \num{0,200(3)} & \num{1637,8(10)}  & 30 \\
-        $t_{22}$ &                &                & \num{1638,0(10)}  & 30 \\
+        Messung & Masse $m \;/\; \si{\kilogram}$ & Position $R\;/\;\si{\meter}$ & $t \;/\; \si{\second}$ & Perioden $n$ \\
+        $01$ & -              &   -            & \num{755,53(100)} & 26 \\
+        $02$ &                &                & \num{726,29(100)} & 25 \\
+        $11$ & \num{0,393(1)} & \num{0,045(3)} & \num{806,59(100)} & 26 \\
+        $12$ &                &                & \num{775,66(100)} & 25 \\
+        $21$ &                & \num{0,200(3)} & \num{1637,8(10)}  & 30 \\
+        $22$ &                &                & \num{1638,0(10)}  & 30 \\
     \end{tblr}
-    \caption{Gemessene Zeiten der sechs Einzelmessungen.}
-    \label{tab:messwerte}
+    \caption{Gemessene Zeiten der sechs Einzelmessungen. Bei den Messungen $01$ und $02$ wurden keine Massen verwendet. Bei den anderen Messungen wurden je zwei Massen mit Masse $m$ verwendet. Für die Messungen $1J$ und $2J$ wurden verschiedene Positionen $R$ der Massen eingestellt.\label{tab:messwerte}}
 \end{table}
