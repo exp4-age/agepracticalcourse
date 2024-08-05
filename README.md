@@ -1,4 +1,4 @@
-# LaTeX Template for a Report in the Physics Practical Course
+# LaTeX Template für Versuchsprotokolle im Physikalischen Praktikum
 
 Dies ist ein LaTeX Template und Beispielprotokoll für Versuchsprotokolle im Physikalischen Praktikum für Elektrotechniker.
 Das Beispielprotokoll ist [hier](report.pdf) als PDF verfügbar.
