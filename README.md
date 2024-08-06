@@ -13,4 +13,4 @@ Für die Verwendung des LaTeX Templates wird Overleaf empfohlen.
 - Das Titelblatt kann im Editor in der Datei `main.tex` angepasst werden.
 - Der Inhalt wird im Editor in den Datein im Ordner `content` gesetzt.
 - Das Template zeigt anhand des Beispielprotokolls wie das Template verwendet werden kann und beinhaltet Beispiele für Abbildungen, Tabellen, Gleichungen, Zitate und Text.
-- In der Datei `lit.bib` können im Editor Zitate im Bibtex Format hinzugefügt werden und dann im Text mit $\cite{}$ referenziert werden.
+- In der Datei `lit.bib` können im Editor Zitate im Bibtex Format hinzugefügt werden und dann im Text mit `\cite{}` referenziert werden.
