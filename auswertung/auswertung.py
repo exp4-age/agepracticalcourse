@@ -7,6 +7,7 @@ angegeben werden, die zur Fehlerfortpflanzung verwendet wurden.
 
 import numpy as np
 
+
 # Messwerte
 # Länge l
 l = 1.5  # in m
@@ -55,15 +56,15 @@ print("Berechnung der Schwingungsdauern und jeweiligen Unsicherheiten in s:")
 print("--------------------------------------------------------------------")
 T0 = 0.5 * (t01 / n01 + t02 / n02)
 uT0 = 0.5 * np.sqrt((ut / n01) ** 2 + (ut / n02) ** 2)
-print("T0 = {:.2f} ± {:.2f}".format(T0, uT0))
+print("T0 = {:.4f} ± {:.4f}".format(T0, uT0))
 
 T1 = 0.5 * (t11 / n11 + t12 / n12)
 uT1 = 0.5 * np.sqrt((ut / n11) ** 2 + (ut / n12) ** 2)
-print("T1 = {:.2f} ± {:.2f}".format(T1, uT1))
+print("T1 = {:.4f} ± {:.4f}".format(T1, uT1))
 
 T2 = 0.5 * (t21 / n21 + t22 / n22)
 uT2 = 0.5 * np.sqrt((ut / n21) ** 2 + (ut / n22) ** 2)
-print("T2 = {:.2f} ± {:.2f}".format(T2, uT2))
+print("T2 = {:.4f} ± {:.4f}".format(T2, uT2))
 print()
 
 print("Berechnung der Federkonstante in Nm:")
@@ -75,7 +76,7 @@ uDR2 = (m * 2 * R2 / (T2**2 - T1**2) * uR2)**2
 uDT1 = (m * 2 * (R2**2 - R1**2) / (T2**2 - T1**2)**2 * T1 * uT1)**2
 uDT2 = (m * 2 * (R2**2 - R1**2) / (T2**2 - T1**2)**2 * T2 * uT2)**2
 uD = 4 * np.pi**2 * np.sqrt(uDm + uDR1 + uDR2 + uDT1 + uDT2)
-print("D = ({:.2f} ± {:.2f})e-4".format(D * 10**4, uD * 10**4))
+print("D = ({:.4f} ± {:.4f})e-4".format(D * 10**4, uD * 10**4))
 print("Beiträge zur Unsicherheit:")
 print("  um: {:.2f}".format(uDm * 10**15))
 print("  uR1: {:.2f}".format(uDR1 * 10**15))
@@ -91,7 +92,7 @@ uGD = (l / r**4 * uD)**2
 uGl = (D / r**4 * ul)**2
 uGr = (D * 4 * l / r**5 * ur)**2
 uG = 2 / np.pi * np.sqrt(uGD + uGl + uGr)
-print("G = ({:.2f} ± {:.2f})e10".format(G * 10**-10, uG * 10**-10))
+print("G = ({:.4f} ± {:.4f})e10".format(G * 10**-10, uG * 10**-10))
 print("Beiträge zur Unsicherheit:")
 print("  uD: {:.2f}".format(uGD * 10**-18))
 print("  ul: {:.2f}".format(uGl * 10**-18))
@@ -105,5 +106,5 @@ uJ0 = np.sqrt(
     (T0**2 / (4 * np.pi**2) * uD)**2
     + (2 * T0 * D / (4 * np.pi**2) * uT0)**2
 )
-print("J0 = ({:.2f} ± {:.2f})e-3".format(J0 * 10**3, uJ0 * 10**3))
+print("J0 = ({:.4f} ± {:.4f})e-3".format(J0 * 10**3, uJ0 * 10**3))
 print()
