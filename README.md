@@ -7,6 +7,7 @@ Für die Verwendung des LaTeX Templates wird Overleaf empfohlen.
 ## Verwendung mit Overleaf
 1. Mit einem Klick auf `<> Code` und dann `Download ZIP` in diesem GitHub Repository kann das Template heruntergeladen werden.
 2. Nach der Erstellung eines [Overleaf](https://www.overleaf.com/) Accounts, wird auf der Projects Startseite mit einem Klick auf `New Project` und dann `Upload Project` ein Pop-Up geöffnet, in welchem die zuvor heruntergeladene Zip Datei hochgeladen werden kann.
+3. Im Menü muss dann noch `main.tex` als *Main document* ausgewählt werden.
 
 ## Verwendung des Templates
 
